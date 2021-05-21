@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block body_block %}
+    <form method="post">
+        {% csrf_token %}<br><br>
+        {{ form.as_p }}
+
+       <br> <button type="submit" class="btn btn-primary btn-success">Predict</button><br>
+    </form>
+</div>
+{% endblock %}

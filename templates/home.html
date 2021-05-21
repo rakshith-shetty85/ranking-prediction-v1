@@ -1,0 +1,385 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+
+<form method="post">
+    {% csrf_token %}
+    <h1>Data</h1>
+    <h3>Sanctioned (Approved) Intake</h3>
+    <table border="01">
+        <tr>
+            <th>Academic Year</th>
+            <th>2020-21</th>
+            <th>2019-20</th>
+            <th>2018-19</th>
+            <th>2017-18</th>
+        </tr>
+        <tr>
+            <td>UG [4 Years Program(s)]</td>
+            <td><input type="number" volue="" name="Intake11"></td>
+               <td><input type="number" volue="" name="Intake12"></td>
+               <td><input type="number" volue="" name="Intake13"> </td>
+               <td><input type="number" volue="" name="Intake14"></td>
+        </tr>
+        <tr>
+            <td>UG [5 Years Program(s)]</td>
+            <td><input type="number" volue="" name="Intake21"></td>
+               <td><input type="number" volue="" name="Intake22"></td>
+               <td><input type="number" volue="" name="Intake23"> </td>
+               <td><input type="number" volue="" name="Intake24"></td>
+        </tr>
+        <tr>
+            <td>PG [2 Years Program(s)]</td>
+            <td><input type="number" volue="" name="Intake31"></td>
+               <td><input type="number" volue="" name="Intake32"></td>
+               <td><input type="number" volue="" name="Intake33"> </td>
+               <td><input type="number" volue="" name="Intake34"></td>
+        </tr>
+        <tr>
+            <td>PG [3 Years Program(s)]</td>
+            <td><input type="number" volue="" name="Intake41"></td>
+               <td><input type="number" volue="" name="Intake42"></td>
+               <td><input type="number" volue="" name="Intake43"> </td>
+               <td><input type="number" volue="" name="Intake44"></td>
+        </tr>
+    </table>
+
+    <h3>Total Actual Student Strength (Program(s) Offered by Your Institution)</h3>
+       <table border="01" >
+        <tr><td>(All programs of all years) </td>
+            <th>No.of Male Students</th>
+            <th>No.of Female students</th>
+            <th>Total students</th>
+            <th>Within State (Including male & female)</th>
+            <th>Outside State (Including male & female)</th>
+            <th>Outside Country (Including male & female)</th>
+            <th>Economically Backward (Including male & female)</th>
+            <th>Socially Challenged (SC+ST+OBC Including male & female)</th>
+            <th>No. of students receiving full tuition fee reimbursement from the State and Central Government</th>
+            <th>No. of students receiving full tuition fee reimbursement from Institution Funds</th>
+            <th>No. of students receiving full tuition fee reimbursement from the Private Bodies</th>
+            <th>No. of students who are not receiving full tuition fee reimbursement</th>
+        </tr>
+           <tr>
+               <td>UG [4 Years Program(s)] </td>
+               <td><input type="number" volue="" name="MStud"></td>
+               <td><input type="number" volue="" name="FStud"></td>
+               <td><input type="number" volue="" name="TStud"> </td>
+               <td><input type="number" volue="" name="WINState"></td>
+               <td><input type="number" volue="" name="OOFState"></td>
+               <td><input type="number" volue="" name="OOFCountry"></td>
+               <td><input type="number" volue="" name="EBC"></td>
+               <td><input type="number" volue="" name="SChalenged"></td>
+               <td><input type="number" volue="" name="RemSandC"></td>
+               <td><input type="number" volue="" name="RemInst"></td>
+               <td><input type="number" volue="" name="RemPrev"></td>
+               <td><input type="number" volue="" name="NoRem"></td>
+           </tr>
+           <tr>
+               <td>UG [5 Years Program(s)]</td>
+               <td><input type="number" volue="" name="MStud1"></td>
+               <td><input type="number" volue="" name="FStud1"></td>
+               <td><input type="number" volue="" name="TStud1"> </td>
+               <td><input type="number" volue="" name="WINState1"></td>
+               <td><input type="number" volue="" name="OOFState1"></td>
+               <td><input type="number" volue="" name="OOFCountry1"></td>
+               <td><input type="number" volue="" name="EBC1"></td>
+               <td><input type="number" volue="" name="SChalenged1"></td>
+               <td><input type="number" volue="" name="RemSandC1"></td>
+               <td><input type="number" volue="" name="RemInst1"></td>
+               <td><input type="number" volue="" name="RemPrev1"></td>
+               <td><input type="number" volue="" name="NoRem1"></td>
+           </tr>
+           <tr><td>PG [2 Year Program(s)]</td>
+               <td><input type="number" volue="" name="MStud2"></td>
+               <td><input type="number" volue="" name="FStud2"></td>
+               <td><input type="number" volue="" name="TStud2"> </td>
+               <td><input type="number" volue="" name="WINState2"></td>
+               <td><input type="number" volue="" name="OOFState2"></td>
+               <td><input type="number" volue="" name="OOFCountry2"></td>
+               <td><input type="number" volue="" name="EBC2"></td>
+               <td><input type="number" volue="" name="SChalenged2"></td>
+               <td><input type="number" volue="" name="RemSandC2"></td>
+               <td><input type="number" volue="" name="RemInst2"></td>
+               <td><input type="number" volue="" name="RemPrev2"></td>
+               <td><input type="number" volue="" name="NoRem2"></td>
+           </tr>
+
+    </table>
+
+
+    <br><br>
+    <h2>Placement & Higher Studies</h2>
+    <h3>UG [4 Years Program(s)]: Placement & higher studies for previous 3 years</h3>
+    <table border="1">
+        <tr>
+            <th>Academic Yea</th>
+            <th>No. of first year students intake in the year</th>
+            <th>No. of first year students admitted in the year</th>
+            <th>Academic Year</th>
+            <th>No. of students admitted through Lateral entry</th>
+            <th>Academic Year</th>
+            <th>No. of students graduating in minimum stipulated time</th>
+            <th>No. of students placed</th>
+            <th>Median salary of placed graduates(Amount in Rs.)</th>
+            <th>No. of students selected for Higher Studies</th>
+        </tr>
+        <tr>
+            <td>2013-2014</td>
+            <td><input type="number" volue="" name="FstIntake11"></td>
+            <td><input type="number" volue="" name="FstAdmit11"></td>
+            <td>2014-2015</td>
+            <td><input type="number" volue="" name="Lateral11"></td>
+            <td>2016-17</td>
+            <td><input type="number" volue="" name="GMTime11"></td>
+            <td><input type="number" volue="" name="Placed11"></td>
+            <td><input type="number" volue="" name="MedianSal11"></td>
+            <td><input type="number" volue="" name="SelectedHigh11"></td>
+        </tr>
+        <tr>
+            <td>2014-2015</td>
+            <td><input type="number" volue="" name="FstIntake12"></td>
+            <td><input type="number" volue="" name="FstAdmit12"></td>
+            <td>2015-2016</td>
+            <td><input type="number" volue="" name="Lateral12"></td>
+            <td>2017-18</td>
+            <td><input type="number" volue="" name="GMTime12"></td>
+            <td><input type="number" volue="" name="Placed12"></td>
+            <td><input type="number" volue="" name="MedianSal12"></td>
+            <td><input type="number" volue="" name="SelectedHigh12"></td>
+        </tr>
+        <tr>
+            <td>2015-2016</td>
+            <td><input type="number" volue="" name="FstIntake13"></td>
+            <td><input type="number" volue="" name="FstAdmit13"></td>
+            <td>2016-2017</td>
+            <td><input type="number" volue="" name="Lateral13"></td>
+            <td>201-19</td>
+            <td><input type="number" volue="" name="GMTime13"></td>
+            <td><input type="number" volue="" name="Placed13"></td>
+            <td><input type="number" volue="" name="MedianSal13"></td>
+            <td><input type="number" volue="" name="SelectedHigh13"></td>
+        </tr>
+    </table>
+
+
+    <br><br>
+    <h3>UG [5 Years Program(s)]: Placement & higher studies for previous 3 years</h3>
+    <table border="1">
+        <tr>
+            <th>Academic Year</th>
+            <th>No. of first year students intake in the year</th>
+            <th>No. of first year students admitted in the year</th>
+            <th>Academic Year</th>
+            <th>No. of students admitted through Lateral entry</th>
+            <th>Academic Year</th>
+            <th>No. of students graduating in minimum stipulated time</th>
+            <th>No. of students placed</th>
+            <th>Median salary of placed graduates(Amount in Rs.)</th>
+            <th>No. of students selected for Higher Studies</th>
+        </tr>
+        <tr>
+            <td>2012-2013</td>
+            <td><input type="number" volue="" name="FstIntake21"></td>
+            <td><input type="number" volue="" name="FstAdmit21"></td>
+            <td>2013-2014</td>
+            <td><input type="number" volue="" name="Lateral21"></td>
+            <td>2016-17</td>
+            <td><input type="number" volue="" name="GMTime21"></td>
+            <td><input type="number" volue="" name="Placed21"></td>
+            <td><input type="number" volue="" name="MedianSal21"></td>
+            <td><input type="number" volue="" name="SelectedHigh21"></td>
+        </tr>
+        <tr>
+            <td>2013-2014</td>
+            <td><input type="number" volue="" name="FstIntake22"></td>
+            <td><input type="number" volue="" name="FstAdmit22"></td>
+            <td>2014-15</td>
+            <td><input type="number" volue="" name="Lateral22"></td>
+            <td>2017-18</td>
+            <td><input type="number" volue="" name="GMTime22"></td>
+            <td><input type="number" volue="" name="Placed22"></td>
+            <td><input type="number" volue="" name="MedianSal22"></td>
+            <td><input type="number" volue="" name="SelectedHigh22"></td>
+        </tr>
+        <tr>
+            <td>2014-15</td>
+            <td><input type="number" volue="" name="FstIntake23"></td>
+            <td><input type="number" volue="" name="FstAdmit23"></td>
+            <td>2015-16</td>
+            <td><input type="number" volue="" name="Lateral23"></td>
+            <td>2018-19</td>
+            <td><input type="number" volue="" name="GMTime23"></td>
+            <td><input type="number" volue="" name="Placed23"></td>
+            <td><input type="number" volue="" name="MedianSal23"></td>
+            <td><input type="number" volue="" name="SelectedHigh23"></td>
+        </tr>
+    </table>
+
+
+    <br><br>
+    <h3>PG [2 Years Program(s)]: Placement & higher studies for previous 3 years</h3>
+    <table border="1">
+        <tr>
+            <th>Academic Year</th>
+            <th>No. of first year students intake in the year</th>
+            <th>No. of first year students admitted in the year</th>
+            <th>Academic Year</th>
+            <th>No. of students graduating in minimum stipulated time</th>
+            <th>No. of students placed</th>
+            <th>Median salary of placed graduates(Amount in Rs.)</th>
+            <th>No. of students selected for Higher Studies</th>
+        </tr>
+        <tr>
+            <td>2015-2016</td>
+            <td><input type="number" volue="" name="FstIntake31"></td>
+            <td><input type="number" volue="" name="FstAdmit31"></td>
+            <td>2016-17</td>
+            <td><input type="number" volue="" name="GMTime31"></td>
+            <td><input type="number" volue="" name="Placed31"></td>
+            <td><input type="number" volue="" name="MedianSal31"></td>
+            <td><input type="number" volue="" name="SelectedHigh31"></td>
+        </tr>
+        <tr>
+            <td>2016-17</td>
+            <td><input type="number" volue="" name="FstIntake32"></td>
+            <td><input type="number" volue="" name="FstAdmit32"></td>
+            <td>2017-18</td>
+            <td><input type="number" volue="" name="GMTime32"></td>
+            <td><input type="number" volue="" name="Placed32"></td>
+            <td><input type="number" volue="" name="MedianSal32"></td>
+            <td><input type="number" volue="" name="SelectedHigh32"></td>
+        </tr>
+        <tr>
+            <td>2017-18</td>
+            <td><input type="number" volue="" name="FstIntake33"></td>
+            <td><input type="number" volue="" name="FstAdmit33"></td>
+            <td>2018-19</td>
+            <td><input type="number" volue="" name="GMTime33"></td>
+            <td><input type="number" volue="" name="Placed33"></td>
+            <td><input type="number" volue="" name="MedianSal33"></td>
+            <td><input type="number" volue="" name="SelectedHigh33"></td>
+        </tr>
+    </table>
+
+
+    <br><br>
+    <h3>PG [3 Years Program(s)]: Placement & higher studies for previous 3 years</h3>
+    <table border="1">
+        <tr>
+            <th>Academic Year</th>
+            <th>No. of first year students intake in the year</th>
+            <th>No. of first year students admitted in the year</th>
+            <th>Academic Year</th>
+            <th>No. of students admitted through Lateral entry</th>
+            <th>Academic Year</th>
+            <th>No. of students graduating in minimum stipulated time</th>
+            <th>No. of students placed</th>
+            <th>Median salary of placed graduates(Amount in Rs.)</th>
+            <th>No. of students selected for Higher Studies</th>
+        </tr>
+        <tr>
+            <td>2014-15</td>
+            <td><input type="number" volue="" name="FstIntake41"></td>
+            <td><input type="number" volue="" name="FstAdmit41"></td>
+            <td>2015-16</td>
+            <td><input type="number" volue="" name="Lateral41"></td>
+            <td>2016-17</td>
+            <td><input type="number" volue="" name="GMTime41"></td>
+            <td><input type="number" volue="" name="Placed41"></td>
+            <td><input type="number" volue="" name="MedianSal41"></td>
+            <td><input type="number" volue="" name="SelectedHigh41"></td>
+        </tr>
+        <tr>
+            <td>2015-16</td>
+            <td><input type="number" volue="" name="FstIntake42"></td>
+            <td><input type="number" volue="" name="FstAdmit42"></td>
+            <td>2016-17</td>
+            <td><input type="number" volue="" name="Lateral42"></td>
+            <td>2017-18</td>
+            <td><input type="number" volue="" name="GMTime42"></td>
+            <td><input type="number" volue="" name="Placed42"></td>
+            <td><input type="number" volue="" name="MedianSal42"></td>
+            <td><input type="number" volue="" name="SelectedHigh42"></td>
+        </tr>
+        <tr>
+            <td>2016-17</td>
+            <td><input type="number" volue="" name="FstIntake43"></td>
+            <td><input type="number" volue="" name="FstAdmit43"></td>
+            <td>2017-18</td>
+            <td><input type="number" volue="" name="Lateral43"></td>
+            <td>2018-19</td>
+            <td><input type="number" volue="" name="GMTime43"></td>
+            <td><input type="number" volue="" name="Placed43"></td>
+            <td><input type="number" volue="" name="MedianSal43"></td>
+            <td><input type="number" volue="" name="SelectedHigh43"></td>
+        </tr>
+    </table>
+    <br><br>
+    <h2>Ph.D Student Details</h2>
+    <table border="1">
+        <tr>
+            <th>Ph.D (Student pursuing doctoral program till 2018-19)</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th>Total Students</th>
+        </tr>
+        <tr>
+            <td>Full time</td>
+            <td><input type="number" value="" name="FtimePHD"></td>
+        </tr>
+
+        <tr>
+            <td>part time</td>
+            <td><input type="number" value="" name="PtimePHD"></td>
+        </tr>
+        <tr>
+            <th>No. of Ph.D students graduated (including Integrated Ph.D)</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th>2018-19</th>
+            <th>2018-19</th>
+            <th>2016-17</th>
+        </tr>
+        <tr>
+            <th>Full Time</th>
+            <td><input type="number" value="" name="FtimePHD1"></td>
+            <td><input type="number" value="" name="FtimePHD2"></td>
+            <td><input type="number" value="" name="FtimePHD3"></td>
+        </tr>
+        <tr>
+            <th>Part time</th>
+            <td><input type="number" value="" name="PtimePHD1"></td>
+            <td><input type="number" value="" name="PtimePHD2"></td>
+            <td><input type="number" value="" name="PtimePHD3"></td>
+        </tr>
+    </table>
+    <br><br>
+    <h2>PCS Facilities: Facilities of physically challenged students</h2>
+    <table border="1">
+        <tr>
+            <th>1. Do your institution buildings have Lifts/Ramps?</th>
+            <td><input type="text" name="PCS1"></td>
+        </tr>
+        <tr>
+            <th>2. Do your institution have provision for walking aids, includingwheelchairs and transportation from one building to another for
+handicapped students?</th>
+            <td><input type="text" name="PCS2"></td>
+        </tr>
+        <tr>
+            <th>3. Do your institution buildings have specially designed toilets for handicapped students?</th>
+
+            <td><input type="text" name="PCS3"></td>
+        </tr>
+    </table>
+    <center>
+        <input type="submit" value="submit" class="btn btn-primary btn-success">
+        <input type="reset" value="reset" class="btn btn-primary btn-danger">
+    </center>
+</form>
+{% endblock %}
